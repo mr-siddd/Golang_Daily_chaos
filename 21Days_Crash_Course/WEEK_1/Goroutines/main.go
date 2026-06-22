@@ -15,4 +15,6 @@ func main() {
 
 	//time.Sleep(1 * time.Second) // Sleep to allow goroutines to finish before the main function exits
 	fmt.Println("HEY SID!")
+
+	primitives()
 }

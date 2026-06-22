@@ -2,7 +2,7 @@ package main
 
 import "fmt"
 
-func main() {
+func primitives() {
 
 	myChannel := make(chan string)      // Create a channel of type string
 	anotherChannel := make(chan string) // Create another channel of type string

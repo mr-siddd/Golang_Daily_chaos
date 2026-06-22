@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Employee_Manager/internals/employee"
+	"Employee_Manager/internal/employee"
 	"fmt"
 )
 

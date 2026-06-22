@@ -1,7 +1,7 @@
 package main
 
 import (
-	"Employee_Manager/internal/employee"
+	"github.com/mr-siddd/Golang_Daily_chaos/Employee_Manager/employee"
 	"fmt"
 )
 

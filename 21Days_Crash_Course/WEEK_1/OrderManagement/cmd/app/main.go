@@ -32,9 +32,6 @@ func (o Order) OrderValidation() bool {
 	if o.Transcode != 2073 && o.ExchangeFlag != "N" {
 		fmt.Println("Transcode is not Updated, Eventhough order is coming from Exchange")
 		counter++
-	} else {
-		fmt.Println("Transcode is not Updated")
-		counter++
 	}
 
 	if o.ExchangeFlag != "Y" {
@@ -42,7 +39,7 @@ func (o Order) OrderValidation() bool {
 		counter++
 	}
 
-	if counter > 3 {
+	if counter > 0 {
 		fmt.Println("Order is invalid, Please check the order details")
 		return false
 	}

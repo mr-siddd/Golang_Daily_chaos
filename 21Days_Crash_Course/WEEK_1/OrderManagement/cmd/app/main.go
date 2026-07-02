@@ -20,7 +20,7 @@ func (o Order) OrderValidation() bool {
 
 	counter := 0
 
-	if o.OrderID > 9999999 {
+	if o.OrderID > 99999999 {
 		fmt.Println("Order ID is invalid")
 		counter++
 
@@ -61,6 +61,6 @@ func OrderStatusCheck(o OrderStatus) {
 func main() {
 	fmt.Println("Order Management System")
 
-	OrderStatusCheck(Order{OrderID: 12345689, OrderStatus: "Completed", Transcode: 2000, ExchangeFlag: "Y"})
+	OrderStatusCheck(Order{OrderID: 12345689, OrderStatus: "Completed", Transcode: 2073, ExchangeFlag: "Y"})
 
 }

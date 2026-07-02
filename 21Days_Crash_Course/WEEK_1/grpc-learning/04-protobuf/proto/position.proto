@@ -1,0 +1,12 @@
+syntax = "proto3";
+
+package position;
+
+option go_package  = "github.com/mr-siddd/grpc-learning/04-protobuf/proto;positionpb";
+
+message position {
+    string symbol =1;
+    double RiskScore = 2;
+    string timestamp = 3;
+    
+}

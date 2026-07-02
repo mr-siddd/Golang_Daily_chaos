@@ -34,7 +34,7 @@ func runSequentialMode() {
 	fmt.Println("Running in Sequential Mode... [1 at a time → pure latency]")
 	// Implement sequential HTTP requests here
 
-	latencies := make([]time.Duration, totalRequests)
+	latencies := make([]time.Duration, 0, totalRequests)
 	start := time.Now()
 
 	client := &http.Client{}
@@ -58,7 +58,7 @@ func runSequentialMode() {
 
 func runConcurrentMode() {
 
-	fmt.Print("====Concurrent (%d at a time)=====\n")
+	fmt.Printf("====Concurrent (%d at a time)=====\n", concurrency)
 
 	latencies := make([]time.Duration, totalRequests)
 	var wg sync.WaitGroup
